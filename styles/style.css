@@ -1,0 +1,171 @@
+@import "/node_modules/@catppuccin/palette/css/catppuccin.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Roboto';
+}
+
+body, html {
+  height: 100vh;
+}
+
+body {
+  color: var(--ctp-mocha-text);
+  background-color: var(--ctp-mocha-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.titlebox {
+  width: 450px;
+  height: 100px;
+  background-color: var(--ctp-mocha-surface0);
+  margin: 10px 0px;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 4px 10px var(--ctp-mocha-crust);
+}
+
+.titlebox__syncbutton {
+  border: none;
+  width: 32px;
+  height: 32px;
+  background-image: url("../res/sync_FILL0_wght400_GRAD0_opsz24.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #FFFFFF00;
+  filter: invert(100%);
+  border-radius: 50px;
+}
+
+.titlebox__placeholder {
+  background-color: var(--ctp-mocha-crust);
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+.view {
+  width: 600px;
+  height: 500px;
+  background-color: var(--ctp-mocha-surface0);
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 32px;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 4px 10px var(--ctp-mocha-crust);
+}
+
+.view__addtaskbutton {
+  position: absolute;
+  border-radius: 24px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: var(--ctp-mocha-teal);
+  box-shadow: 0px 4px 10px var(--ctp-mocha-mantle);
+  bottom: 48px;
+  right: 48px;
+  font-size: larger;
+}
+
+@media (max-width: 768px) {
+  .titlebox {
+    width: 300px;
+    height: 24px;
+    font-size: 0.7rem;
+  }
+
+  .view {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 425px) {
+  .titlebox {
+    width: 250px;
+    height: 24px;
+    padding: 24px;
+    font-size: 0.5rem;
+  }
+
+  .titlebox__placeholder {
+    width: 16px;
+    height: 16px;
+  }
+
+  .view {
+    width: 350px;
+    height: 300px;
+  }
+
+  .view__addtaskbutton {
+    width: 32px;
+    height: 32px;
+    right: 24px;
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .titlebox {
+    width: 250px;
+    height: 24px;
+    padding: 24px;
+    font-size: 0.5rem;
+  }
+
+  .titlebox__placeholder {
+    width: 16px;
+    height: 16px;
+  }
+
+  .view {
+    width: 300px;
+    height: 300px;
+  }
+
+  .view__addtaskbutton {
+    width: 32px;
+    height: 32px;
+    right: 24px;
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .titlebox {
+    width: 250px;
+    height: 24px;
+    padding: 24px;
+    font-size: 0.5rem;
+  }
+
+  .titlebox__placeholder {
+    width: 16px;
+    height: 16px;
+  }
+
+  .view {
+    width: 250px;
+    height: 300px;
+  }
+
+  .view__addtaskbutton {
+    width: 32px;
+    height: 32px;
+    right: 24px;
+    bottom: 24px;
+  }
+}
